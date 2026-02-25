@@ -1,6 +1,14 @@
 import { useParams, Link, Navigate } from "react-router";
 import { motion } from "motion/react";
-import { ArrowLeft, ExternalLink, Github, CheckCircle2, Calendar, Clock, Briefcase } from "lucide-react";
+import {
+  ArrowLeft,
+  ExternalLink,
+  Github,
+  CheckCircle2,
+  Calendar,
+  Clock,
+  Briefcase,
+} from "lucide-react";
 import { projects } from "../data/projects";
 import { Footer } from "../components/Footer";
 
@@ -45,7 +53,10 @@ export default function CaseStudy() {
             </div>
             <h1
               className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent"
-              style={{ backgroundImage: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%)" }}
+              style={{
+                backgroundImage:
+                  "linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%)",
+              }}
             >
               {project.title}
             </h1>
@@ -61,7 +72,10 @@ export default function CaseStudy() {
               { icon: Briefcase, label: "Role", value: project.role },
               { icon: Clock, label: "Duration", value: project.duration },
             ].map(({ icon: Icon, label, value }) => (
-              <div key={label} className="bg-card border border-border rounded-2xl p-4">
+              <div
+                key={label}
+                className="bg-card border border-border rounded-2xl p-4"
+              >
                 <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
                   <Icon className="w-3.5 h-3.5" />
                   {label}
@@ -119,10 +133,12 @@ export default function CaseStudy() {
                 transition={{ duration: 0.5 }}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="h-6 w-1 rounded-full bg-gradient-to-b from-indigo-500 to-purple-500" />
+                  <div className="h-6 w-1 rounded-full bg-gradient-to-b from-indigo-500 to-blue-500" />
                   <h2 className="text-2xl font-bold">{title}</h2>
                 </div>
-                <p className="text-muted-foreground leading-relaxed pl-4">{content}</p>
+                <p className="text-muted-foreground leading-relaxed pl-4">
+                  {content}
+                </p>
               </motion.section>
             ))}
 
@@ -134,7 +150,7 @@ export default function CaseStudy() {
               transition={{ duration: 0.5 }}
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="h-6 w-1 rounded-full bg-gradient-to-b from-indigo-500 to-purple-500" />
+                <div className="h-6 w-1 rounded-full bg-gradient-to-b from-indigo-500 to-blue-500" />
                 <h2 className="text-2xl font-bold">Key Results</h2>
               </div>
               <div className="grid gap-3 pl-4">
@@ -184,17 +200,24 @@ export default function CaseStudy() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="mt-16 p-10 rounded-3xl border border-primary/20 text-center relative overflow-hidden"
-            style={{ background: "linear-gradient(135deg, rgba(79,70,229,0.08) 0%, rgba(168,85,247,0.08) 100%)" }}
+            style={{
+              background:
+                "linear-gradient(135deg, rgba(79,70,229,0.08) 0%, rgba(168,85,247,0.08) 100%)",
+            }}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 pointer-events-none" />
-            <h3 className="text-2xl font-bold mb-3 relative">Interested in similar work?</h3>
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-blue-500/5 pointer-events-none" />
+            <h3 className="text-2xl font-bold mb-3 relative">
+              Interested in similar work?
+            </h3>
             <p className="text-muted-foreground mb-6 relative">
               Let's discuss your project and create something amazing together.
             </p>
             <a
               href="/#contact"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white shadow-lg hover:shadow-xl transition-all relative"
-              style={{ background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)" }}
+              style={{
+                background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)",
+              }}
             >
               Let's Talk About Your Project
               <ArrowLeft className="w-5 h-5 rotate-180" />

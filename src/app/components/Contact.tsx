@@ -22,7 +22,7 @@ export function Contact() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
@@ -47,12 +47,15 @@ export function Contact() {
       label: "Location",
       value: "Indonesia",
       href: null,
-      color: "text-purple-500 bg-purple-100 dark:bg-purple-900/30",
+      color: "text-blue-500 bg-blue-100 dark:bg-blue-900/30",
     },
   ];
 
   return (
-    <section id="contact" className="py-28 px-6 lg:px-8 relative overflow-hidden">
+    <section
+      id="contact"
+      className="py-28 px-6 lg:px-8 relative overflow-hidden"
+    >
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
       <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] rounded-full bg-indigo-500/5 blur-[100px] pointer-events-none" />
 
@@ -76,13 +79,17 @@ export function Contact() {
             Let's Build Something{" "}
             <span
               className="bg-clip-text text-transparent"
-              style={{ backgroundImage: "linear-gradient(135deg, #4f46e5 0%, #a855f7 100%)" }}
+              style={{
+                backgroundImage:
+                  "linear-gradient(135deg, #4f46e5 0%, #a855f7 100%)",
+              }}
             >
               Amazing
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind? Let's discuss how I can help bring your vision to life.
+            Have a project in mind? Let's discuss how I can help bring your
+            vision to life.
           </p>
         </motion.div>
 
@@ -99,32 +106,37 @@ export function Contact() {
               <div>
                 <h3 className="text-xl font-bold mb-3">Contact Info</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  I'm currently available for freelance projects and interesting opportunities.
-                  Feel free to reach out — I typically respond within 24 hours.
+                  I'm currently available for freelance projects and interesting
+                  opportunities. Feel free to reach out — I typically respond
+                  within 24 hours.
                 </p>
               </div>
 
               <div className="space-y-4">
-                {contactInfo.map(({ icon: Icon, label, value, href, color }) => (
-                  <div key={label} className="flex items-center gap-4">
-                    <div className={`p-3 rounded-2xl ${color} flex-shrink-0`}>
-                      <Icon className="w-5 h-5" />
+                {contactInfo.map(
+                  ({ icon: Icon, label, value, href, color }) => (
+                    <div key={label} className="flex items-center gap-4">
+                      <div className={`p-3 rounded-2xl ${color} flex-shrink-0`}>
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <div className="text-xs text-muted-foreground mb-0.5">
+                          {label}
+                        </div>
+                        {href ? (
+                          <a
+                            href={href}
+                            className="font-semibold hover:text-primary transition-colors text-sm"
+                          >
+                            {value}
+                          </a>
+                        ) : (
+                          <div className="font-semibold text-sm">{value}</div>
+                        )}
+                      </div>
                     </div>
-                    <div>
-                      <div className="text-xs text-muted-foreground mb-0.5">{label}</div>
-                      {href ? (
-                        <a
-                          href={href}
-                          className="font-semibold hover:text-primary transition-colors text-sm"
-                        >
-                          {value}
-                        </a>
-                      ) : (
-                        <div className="font-semibold text-sm">{value}</div>
-                      )}
-                    </div>
-                  </div>
-                ))}
+                  ),
+                )}
               </div>
 
               <div className="pt-6 border-t border-border">

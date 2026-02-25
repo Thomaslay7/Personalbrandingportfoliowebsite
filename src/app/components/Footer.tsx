@@ -20,7 +20,7 @@ export function Footer() {
           {/* Brand */}
           <div className="text-center md:text-left space-y-2">
             <div className="flex items-center gap-2 justify-center md:justify-start">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 via-violet-500 to-purple-500 flex items-center justify-center shadow-md">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 via-blue-500 to-blue-500 flex items-center justify-center shadow-md">
                 <span className="text-white text-sm font-bold">TD</span>
               </div>
               <span className="text-lg font-bold">Thomas Diky</span>
@@ -44,15 +44,29 @@ export function Footer() {
             <div className="flex items-center gap-2">
               {[
                 { href: "https://github.com", icon: Github, label: "GitHub" },
-                { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-                { href: "https://twitter.com", icon: Twitter, label: "Twitter" },
-                { href: "mailto:hello@thomasdiky.dev", icon: Mail, label: "Email" },
+                {
+                  href: "https://linkedin.com",
+                  icon: Linkedin,
+                  label: "LinkedIn",
+                },
+                {
+                  href: "https://twitter.com",
+                  icon: Twitter,
+                  label: "Twitter",
+                },
+                {
+                  href: "mailto:hello@thomasdiky.dev",
+                  icon: Mail,
+                  label: "Email",
+                },
               ].map(({ href, icon: Icon, label }) => (
                 <a
                   key={label}
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
-                  rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  rel={
+                    href.startsWith("http") ? "noopener noreferrer" : undefined
+                  }
                   className="p-2.5 rounded-xl bg-background border border-border hover:border-primary/40 hover:bg-primary/5 hover:text-primary text-muted-foreground transition-all shadow-sm"
                   aria-label={label}
                 >
@@ -73,14 +87,6 @@ export function Footer() {
             </div>
             <span className="text-xs">Back to top</span>
           </button>
-        </div>
-
-        {/* Bottom */}
-        <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-muted-foreground">
-          <span>© {currentYear} Thomas Diky. All rights reserved.</span>
-          <span className="flex items-center gap-1">
-            Built with <Heart className="w-3.5 h-3.5 text-red-400 fill-red-400 mx-0.5" /> using React & Tailwind
-          </span>
         </div>
       </div>
     </footer>

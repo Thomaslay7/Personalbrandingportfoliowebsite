@@ -14,7 +14,7 @@ const skills = [
     icon: Server,
     title: "Backend Development",
     desc: "Node.js, Python, REST & GraphQL APIs, microservices, database design.",
-    color: "from-violet-500 to-purple-500",
+    color: "from-blue-500 to-blue-500",
     bg: "bg-violet-100 dark:bg-violet-900/30",
     text: "text-violet-600 dark:text-violet-400",
   },
@@ -22,9 +22,9 @@ const skills = [
     icon: Globe,
     title: "Cloud & DevOps",
     desc: "AWS, Docker, Kubernetes, CI/CD pipelines, infrastructure as code.",
-    color: "from-purple-500 to-pink-500",
-    bg: "bg-purple-100 dark:bg-purple-900/30",
-    text: "text-purple-600 dark:text-purple-400",
+    color: "from-blue-500 to-pink-500",
+    bg: "bg-blue-100 dark:bg-blue-900/30",
+    text: "text-blue-600 dark:text-blue-400",
   },
   {
     icon: Smartphone,
@@ -77,13 +77,17 @@ export function About() {
             What I{" "}
             <span
               className="bg-clip-text text-transparent"
-              style={{ backgroundImage: "linear-gradient(135deg, #4f46e5 0%, #a855f7 100%)" }}
+              style={{
+                backgroundImage:
+                  "linear-gradient(135deg, #4f46e5 0%, #a855f7 100%)",
+              }}
             >
               Specialize In
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From pixel-perfect interfaces to battle-tested backends — I cover the full spectrum of modern web development.
+            From pixel-perfect interfaces to battle-tested backends — I cover
+            the full spectrum of modern web development.
           </p>
         </motion.div>
 
@@ -102,13 +106,17 @@ export function About() {
                 className={`absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r ${color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
               />
 
-              <div className={`w-12 h-12 rounded-2xl ${bg} flex items-center justify-center mb-4`}>
+              <div
+                className={`w-12 h-12 rounded-2xl ${bg} flex items-center justify-center mb-4`}
+              >
                 <Icon className={`w-6 h-6 ${text}`} />
               </div>
               <h3 className="font-bold text-base mb-2 group-hover:text-primary transition-colors">
                 {title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {desc}
+              </p>
             </motion.div>
           ))}
         </div>

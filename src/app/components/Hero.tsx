@@ -1,8 +1,16 @@
-import { ArrowRight, Github, Linkedin, Mail, Download, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  Github,
+  Linkedin,
+  Mail,
+  Download,
+  Sparkles,
+} from "lucide-react";
 import { motion } from "motion/react";
+import profileImage from "@/assets/profile.png";
 
 const stats = [
-  { value: "5+", label: "Years Experience" },
+  { value: "8+", label: "Years Experience" },
   { value: "50+", label: "Projects Built" },
   { value: "30+", label: "Happy Clients" },
   { value: "99%", label: "Client Satisfaction" },
@@ -20,13 +28,26 @@ export function Hero() {
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] rounded-full bg-indigo-500/10 blur-[120px]" />
-        <div className="absolute bottom-1/4 -right-32 w-[500px] h-[500px] rounded-full bg-purple-500/10 blur-[120px]" />
+        <div className="absolute bottom-1/4 -right-32 w-[500px] h-[500px] rounded-full bg-blue-500/10 blur-[120px]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-violet-500/5 blur-[140px]" />
         {/* Grid pattern */}
-        <svg className="absolute inset-0 w-full h-full opacity-[0.03] dark:opacity-[0.06]" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          className="absolute inset-0 w-full h-full opacity-[0.03] dark:opacity-[0.06]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <defs>
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1"/>
+            <pattern
+              id="grid"
+              width="40"
+              height="40"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 40 0 L 0 0 0 40"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+              />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
@@ -75,7 +96,10 @@ export function Hero() {
               >
                 <span
                   className="bg-clip-text text-transparent"
-                  style={{ backgroundImage: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%)" }}
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(135deg, #4f46e5 0%, #3b82f6 50%, #0ea5e9 100%)",
+                  }}
                 >
                   Thomas Diky
                 </span>
@@ -96,7 +120,9 @@ export function Hero() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="text-lg text-muted-foreground max-w-xl leading-relaxed"
             >
-              Building scalable, high-performance web applications with modern technologies. Specialized in React, Node.js, and cloud architecture that drives real business results.
+              Building scalable, high-performance web applications with modern
+              technologies. Specialized in React, Node.js, and cloud
+              architecture that drives real business results.
             </motion.p>
 
             {/* CTAs */}
@@ -108,8 +134,11 @@ export function Hero() {
             >
               <button
                 onClick={handleHireMe}
-                className="group relative px-8 py-4 rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-indigo-500/25 transition-all duration-300"
-                style={{ background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)" }}
+                className="group relative px-8 py-4 rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%)",
+                }}
               >
                 <span className="relative flex items-center gap-2 text-white font-semibold">
                   Hire Me
@@ -137,14 +166,26 @@ export function Hero() {
               <div className="flex items-center gap-2">
                 {[
                   { href: "https://github.com", icon: Github, label: "GitHub" },
-                  { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-                  { href: "mailto:hello@thomasdiky.dev", icon: Mail, label: "Email" },
+                  {
+                    href: "https://linkedin.com",
+                    icon: Linkedin,
+                    label: "LinkedIn",
+                  },
+                  {
+                    href: "mailto:hello@thomasdiky.dev",
+                    icon: Mail,
+                    label: "Email",
+                  },
                 ].map(({ href, icon: Icon, label }) => (
                   <a
                     key={label}
                     href={href}
                     target={href.startsWith("http") ? "_blank" : undefined}
-                    rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    rel={
+                      href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="p-2.5 rounded-xl bg-card border border-border hover:border-primary/40 hover:bg-primary/5 transition-all text-muted-foreground hover:text-primary shadow-sm"
                     aria-label={label}
                   >
@@ -165,12 +206,12 @@ export function Hero() {
             {/* Floating card */}
             <div className="relative">
               {/* Glow ring */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-indigo-500 via-violet-500 to-purple-500 blur-2xl opacity-20 scale-105" />
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-indigo-500 via-blue-500 to-blue-500 blur-2xl opacity-20 scale-105" />
 
               {/* Profile image card */}
               <div className="relative w-80 h-96 lg:w-96 lg:h-[480px] rounded-3xl overflow-hidden border border-white/20 shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1638983752157-052aa1f15bf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYWxlJTIwZGV2ZWxvcGVyJTIwcG9ydHJhaXQlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwxfHx8fDE3NzIwMzc2MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src={profileImage}
                   alt="Thomas Diky"
                   className="w-full h-full object-cover"
                 />
@@ -180,38 +221,39 @@ export function Hero() {
                 {/* Name badge at bottom */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4">
-                    <div className="text-white font-bold text-lg">Thomas Diky</div>
-                    <div className="text-white/70 text-sm">Fullstack Developer</div>
+                    <div className="text-white font-bold text-lg">
+                      Thomas Diky
+                    </div>
+                    <div className="text-white/70 text-sm">
+                      Fullstack Developer
+                    </div>
                     <div className="flex items-center gap-1.5 mt-2">
                       <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                      <span className="text-emerald-300 text-xs">Available for hire</span>
+                      <span className="text-emerald-300 text-xs">
+                        Available for hire
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Floating tech pill */}
-              <motion.div
-                animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 bg-card border border-border rounded-2xl px-4 py-3 shadow-xl"
-              >
-                <div className="text-xs text-muted-foreground mb-1">Primary Stack</div>
-                <div className="flex gap-1.5">
-                  {["⚛️", "🟦", "🟢"].map((emoji, i) => (
-                    <span key={i} className="text-lg">{emoji}</span>
-                  ))}
-                </div>
-              </motion.div>
-
               {/* Floating experience pill */}
               <motion.div
                 animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1,
+                }}
                 className="absolute -bottom-4 -left-4 bg-card border border-border rounded-2xl px-4 py-3 shadow-xl"
               >
-                <div className="text-2xl font-extrabold text-primary">5+</div>
-                <div className="text-xs text-muted-foreground">Years of<br/>Experience</div>
+                <div className="text-2xl font-extrabold text-primary">8+</div>
+                <div className="text-xs text-muted-foreground">
+                  Years of
+                  <br />
+                  Experience
+                </div>
               </motion.div>
             </div>
           </motion.div>
@@ -234,7 +276,10 @@ export function Hero() {
             >
               <div
                 className="text-3xl font-extrabold bg-clip-text text-transparent mb-1"
-                style={{ backgroundImage: "linear-gradient(135deg, #4f46e5 0%, #a855f7 100%)" }}
+                style={{
+                  backgroundImage:
+                    "linear-gradient(135deg, #4f46e5 0%, #0ea5e9 100%)",
+                }}
               >
                 {stat.value}
               </div>
@@ -250,7 +295,9 @@ export function Hero() {
           transition={{ delay: 1.2, duration: 0.6 }}
           className="mt-10 flex flex-wrap justify-center gap-3"
         >
-          <span className="text-sm text-muted-foreground self-center">Tech stack:</span>
+          <span className="text-sm text-muted-foreground self-center">
+            Tech stack:
+          </span>
           {techs.map((tech, index) => (
             <motion.span
               key={tech}
