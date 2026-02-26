@@ -10,15 +10,21 @@ interface ProjectCardProps {
 
 const tagColors: Record<string, string> = {
   React: "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300",
-  TypeScript: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
-  "Node.js": "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300",
-  PostgreSQL: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300",
+  TypeScript:
+    "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  "Node.js":
+    "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300",
+  PostgreSQL:
+    "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300",
   AWS: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
   Docker: "bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300",
-  MongoDB: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
-  Python: "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300",
+  MongoDB:
+    "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  Python:
+    "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300",
   GraphQL: "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300",
-  "React Native": "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300",
+  "React Native":
+    "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300",
 };
 
 function getTagClass(tag: string) {
@@ -26,6 +32,15 @@ function getTagClass(tag: string) {
 }
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
+  const getImagePath = (imageName: string) => {
+    // If it's already a full URL (http/https), return as is
+    if (imageName.startsWith('http')) {
+      return imageName;
+    }
+    // For local assets, reference from /src/assets/ path
+    return `/src/assets/${imageName}`;
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -40,9 +55,12 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         {/* Image */}
         <div className="relative aspect-[16/9] overflow-hidden bg-muted">
           <img
-            src={project.image}
+            src={getImagePath(project.image)}
             alt={project.title}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=450&fit=crop`;
+            }}
           />
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

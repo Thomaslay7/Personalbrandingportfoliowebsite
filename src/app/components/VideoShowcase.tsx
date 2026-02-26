@@ -52,7 +52,8 @@ export function VideoShowcase() {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Check out my latest tutorials and insights on web development, cloud architecture, and modern technologies.
+            Check out my latest tutorials and insights on web development, cloud
+            architecture, and modern technologies.
           </p>
         </motion.div>
 
@@ -66,7 +67,7 @@ export function VideoShowcase() {
         >
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 via-blue-500 to-blue-500 blur-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 rounded-3xl" />
-            
+
             <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
               <div className="relative aspect-video bg-slate-900">
                 <iframe
@@ -87,7 +88,8 @@ export function VideoShowcase() {
                   Building Modern Web Applications
                 </h3>
                 <p className="text-gray-300">
-                  A comprehensive guide to building scalable, high-performance web applications with React, Node.js, and cloud technologies.
+                  A comprehensive guide to building scalable, high-performance
+                  web applications with React, Node.js, and cloud technologies.
                 </p>
               </div>
             </div>
@@ -162,7 +164,11 @@ export function VideoShowcase() {
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 group"
           >
             <span>Watch More on YouTube</span>
-            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+            <svg
+              className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
             </svg>
           </a>

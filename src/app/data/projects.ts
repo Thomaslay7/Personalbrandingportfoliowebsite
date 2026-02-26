@@ -20,401 +20,492 @@ export const projects: Project[] = [
   {
     id: "dermaesthetics-app",
     title: "Dermaesthetics App — Skin Health & Clinic Booking",
-    description: "Mobile app with ML-powered skin analysis, health tracking, and clinic booking integration for dermatology.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
-    tags: ["Flutter", "Firebase", "TensorFlow", "ML Kit", "Image Classification"],
+    description:
+      "Mobile app with ML-powered skin analysis, health tracking, and clinic booking integration for dermatology.",
+    image: "dermaesthetics.jpeg",
+    tags: [
+      "Flutter",
+      "Firebase",
+      "TensorFlow",
+      "ML Kit",
+      "Image Classification",
+    ],
     year: "2022 - Present",
     role: "Lead Mobile & ML Developer",
     duration: "2+ years",
-    overview: "Developed a comprehensive skin health and beauty app with AI-powered skin analysis capabilities. Integrated with Dermaster Group clinics for seamless booking and consultation.",
-    challenge: "Building an app with machine learning image classification for skin analysis while ensuring data privacy, seamless clinic integration, and excellent user experience for skin health tracking.",
-    solution: "Implemented Flutter app with Firebase backend, integrated TensorFlow and Google ML Kit for real-time skin analysis, created personalized skincare recommendations, and built clinic booking system.",
+    overview:
+      "Developed a comprehensive skin health and beauty app with AI-powered skin analysis capabilities. Integrated with Dermaster Group clinics for seamless booking and consultation.",
+    challenge:
+      "Building an app with machine learning image classification for skin analysis while ensuring data privacy, seamless clinic integration, and excellent user experience for skin health tracking.",
+    solution:
+      "Implemented Flutter app with Firebase backend, integrated TensorFlow and Google ML Kit for real-time skin analysis, created personalized skincare recommendations, and built clinic booking system.",
     results: [
       "Successfully deployed with ML-powered skin analysis feature",
       "Integrated with multiple dermatology clinics",
       "Achieved 95% accuracy in skin analysis",
       "Positive user feedback on UX and functionality",
-      "Supports personalized skincare recommendations"
+      "Supports personalized skincare recommendations",
     ],
-    technologies: ["Flutter", "Dart", "Firebase", "TensorFlow", "Google ML Kit", "Image Classification", "REST API"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "TensorFlow",
+      "Google ML Kit",
+      "Image Classification",
+      "REST API",
+    ],
   },
   {
     id: "forstock-warehouse",
     title: "Forstock — Omnichannel Warehouse Management",
-    description: "Comprehensive inventory management system with multi-marketplace integration (Shopee, Tokopedia, Lazada, TikTok Shop).",
-    image: "https://images.unsplash.com/photo-1553531088-e59d884e8db2?w=800&q=80",
-    tags: ["Flutter", "Omnichannel", "Inventory Management", "Marketplace Integration"],
+    description:
+      "Comprehensive inventory management system with multi-marketplace integration (Shopee, Tokopedia, Lazada, TikTok Shop).",
+    image: "forstock.png",
+    tags: [
+      "Flutter",
+      "Omnichannel",
+      "Inventory Management",
+      "Marketplace Integration",
+    ],
     year: "2021 - 2022",
     role: "Lead Mobile Developer",
     duration: "6+ months",
-    overview: "Built a sophisticated warehouse management system integrating multiple e-commerce marketplaces. Enables seamless inventory synchronization across Shopee, Tokopedia, Lazada, and TikTok Shop.",
-    challenge: "Creating a system that syncs inventory across multiple marketplaces in real-time, manages orders from different platforms, and provides unified dashboard for business operations.",
-    solution: "Developed Flutter app with real-time API integration to major marketplaces, implemented inventory sync engine, created unified order management dashboard, and integrated customer chat from all platforms.",
+    overview:
+      "Built a sophisticated warehouse management system integrating multiple e-commerce marketplaces. Enables seamless inventory synchronization across Shopee, Tokopedia, Lazada, and TikTok Shop.",
+    challenge:
+      "Creating a system that syncs inventory across multiple marketplaces in real-time, manages orders from different platforms, and provides unified dashboard for business operations.",
+    solution:
+      "Developed Flutter app with real-time API integration to major marketplaces, implemented inventory sync engine, created unified order management dashboard, and integrated customer chat from all platforms.",
     results: [
       "Successfully integrated 4 major marketplace platforms",
       "Real-time inventory synchronization",
       "Unified order and chat management",
       "Reduced manual data entry by 80%",
-      "Improved inventory accuracy to 99%"
+      "Improved inventory accuracy to 99%",
     ],
-    technologies: ["Flutter", "Dart", "REST API", "Marketplace APIs", "Real-time Sync"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Go",
+      "REST API",
+      "Marketplace APIs",
+      "Real-time Sync",
+    ],
   },
   {
     id: "hakken-online",
     title: "Hakken Online — Anime Merchandise E-Commerce",
-    description: "Premium e-commerce platform for official and licensed anime merchandise in Singapore and international markets.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
+    description:
+      "Premium e-commerce platform for official and licensed anime merchandise in Singapore and international markets.",
+    image: "hakken.jpeg",
     tags: ["Flutter", "Firebase", "E-Commerce", "International Payment"],
-    year: "2021 - Present",
+    year: "2020 - 2021",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Developed a mobile e-commerce platform specializing in official anime merchandise including action figures, Nendoroids, and apparel. Serves Singapore and international customers.",
-    challenge: "Building a premium e-commerce app with international payment support, inventory management, and compelling product showcase for anime enthusiasts.",
-    solution: "Created Flutter app with Firebase backend, integrated international payment gateways, implemented dynamic product catalog with search/filtering, and built customer review system.",
+    overview:
+      "Developed a mobile e-commerce platform specializing in official anime merchandise including action figures, Nendoroids, and apparel. Serves Singapore and international customers.",
+    challenge:
+      "Building a premium e-commerce app with international payment support, inventory management, and compelling product showcase for anime enthusiasts.",
+    solution:
+      "Created Flutter app with Firebase backend, integrated international payment gateways, implemented dynamic product catalog with search/filtering, and built customer review system.",
     results: [
       "Launched successfully in Singapore market",
       "Expanded to international customers",
       "Positive reviews for product quality showcase",
       "High customer satisfaction rating",
-      "Growing user base from anime communities"
+      "Growing user base from anime communities",
     ],
-    technologies: ["Flutter", "Dart", "Firebase", "Payment Gateway", "E-Commerce Features"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Payment Gateway",
+      "E-Commerce Features",
+    ],
   },
   {
     id: "scraping-grabfood",
     title: "GrabFood Data Scraping System",
-    description: "Backend data engineering project for collecting public restaurant and menu data from GrabFood platform.",
-    image: "https://images.unsplash.com/photo-1555949519-eb63b76cb2d7?w=800&q=80",
+    description:
+      "Backend data engineering project for collecting public restaurant and menu data from GrabFood platform.",
+    image: "grabfood.jpg",
     tags: ["Node.js", "TypeScript", "Web Scraping", "Data Engineering"],
-    year: "2021 - 2022",
+    year: "2021 - 2021",
     role: "Backend Developer",
     duration: "3+ months",
-    overview: "Developed a robust web scraping system to collect public restaurant data from GrabFood including names, menus, prices, ratings, and delivery times for market research purposes.",
-    challenge: "Building a scalable scraper that handles dynamic content, respects rate limits, manages data efficiently, and avoids blocking while gathering comprehensive restaurant data.",
-    solution: "Implemented Node.js scraper with TypeScript, used Puppeteer for dynamic content handling, built data processing pipeline, and stored results in structured database format.",
+    overview:
+      "Developed a robust web scraping system to collect public restaurant data from GrabFood including names, menus, prices, ratings, and delivery times for market research purposes.",
+    challenge:
+      "Building a scalable scraper that handles dynamic content, respects rate limits, manages data efficiently, and avoids blocking while gathering comprehensive restaurant data.",
+    solution:
+      "Implemented Node.js scraper with TypeScript, used Puppeteer for dynamic content handling, built data processing pipeline, and stored results in structured database format.",
     results: [
       "Successfully scraped 1000+ restaurants",
       "Collected comprehensive menu and pricing data",
       "Enabled market research and competitor analysis",
       "Built foundation for price comparison platform",
-      "Demonstrated data engineering capabilities"
+      "Demonstrated data engineering capabilities",
     ],
-    technologies: ["Node.js", "TypeScript", "Puppeteer", "Web Scraping", "Data Pipeline"],
+    technologies: [
+      "Node.js",
+      "TypeScript",
+      "Puppeteer",
+      "Web Scraping",
+      "Data Pipeline",
+    ],
   },
   {
     id: "tokoaki-teknisi",
     title: "TokoAki Teknisi — Car Battery E-Commerce & Service",
-    description: "Mobile e-commerce and service booking platform for car and motorcycle battery sales and installation.",
-    image: "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&q=80",
+    description:
+      "Mobile e-commerce and service booking platform for car and motorcycle battery sales and installation.",
+    image: "tokoaki.jpg",
     tags: ["Flutter", "Firebase", "Service Booking", "Multi-Payment"],
-    year: "2021 - Present",
+    year: "2020 - 2022",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Built a mobile platform combining e-commerce for battery sales with service booking for installation. Covers major Indonesian cities with flexible payment options.",
-    challenge: "Creating a dual-purpose app that handles both product sales and service booking with location-based availability, multiple payment methods, and service tracking.",
-    solution: "Developed Flutter app with Firebase, implemented location-based service availability, integrated COD and transfer payment options, and built service booking and tracking system.",
+    overview:
+      "Built a mobile platform combining e-commerce for battery sales with service booking for installation. Covers major Indonesian cities with flexible payment options.",
+    challenge:
+      "Creating a dual-purpose app that handles both product sales and service booking with location-based availability, multiple payment methods, and service tracking.",
+    solution:
+      "Developed Flutter app with Firebase, implemented location-based service availability, integrated COD and transfer payment options, and built service booking and tracking system.",
     results: [
       "Launched across major cities (Jakarta, Bandung, Surabaya, Yogyakarta)",
       "Multi-payment support (COD & transfer)",
       "Seamless service booking experience",
       "Growing customer base",
-      "Positive reviews for service quality"
+      "Positive reviews for service quality",
     ],
-    technologies: ["Flutter", "Dart", "Firebase", "Location Services", "Payment Integration"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Location Services",
+      "Payment Integration",
+    ],
   },
   {
     id: "pocketpet-app",
     title: "PocketPet — Pet Care Management Platform",
-    description: "Comprehensive mobile app helping pet owners manage veterinary consultations, grooming, boarding, and medical records.",
-    image: "https://images.unsplash.com/photo-1602491453631-e2a5ad590ccb?w=800&q=80",
+    description:
+      "Comprehensive mobile app helping pet owners manage veterinary consultations, grooming, boarding, and medical records.",
+    image: "pocketpet.png",
     tags: ["Flutter", "Firebase", "Pet Care", "Consultation Platform"],
-    year: "2021 - Present",
+    year: "2020",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Developed a all-in-one pet care platform connecting pet owners with veterinarians, groomers, and boarding facilities. Maintains digital medical records and pet identification.",
-    challenge: "Building a platform that connects multiple service providers, manages appointments, maintains health records, and provides consultation features for diverse pet care needs.",
-    solution: "Created Flutter app with Firebase backend, integrated veterinary consultation system, implemented booking for grooming and boarding, and built digital medical record system.",
+    overview:
+      "Developed a all-in-one pet care platform connecting pet owners with veterinarians, groomers, and boarding facilities. Maintains digital medical records and pet identification.",
+    challenge:
+      "Building a platform that connects multiple service providers, manages appointments, maintains health records, and provides consultation features for diverse pet care needs.",
+    solution:
+      "Created Flutter app with Firebase backend, integrated veterinary consultation system, implemented booking for grooming and boarding, and built digital medical record system.",
     results: [
       "Successfully launched with multiple service categories",
       "Growing network of veterinarians and groomers",
       "Digital medical records for pet health tracking",
       "Positive feedback from pet owners",
-      "Seamless appointment booking experience"
+      "Seamless appointment booking experience",
     ],
-    technologies: ["Flutter", "Dart", "Firebase", "Appointment Booking", "Medical Records"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Appointment Booking",
+      "Medical Records",
+    ],
   },
+
   {
-    id: "hakken-online-marketplace",
-    title: "Hakken Online — Anime Merchandise Marketplace",
-    description: "Comprehensive e-commerce platform for action figures, Nendoroids, and anime merchandise with payment integration.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
-    tags: ["Flutter", "Stripe", "E-Commerce", "Payment Gateway"],
-    year: "2020 - Present",
+    id: "papparich-app",
+    title: "Papparich — Recipe & Cooking Guide",
+    description:
+      "Internal application displaying restaurant menus, recipes, and video tutorials for food preparation.",
+    image: "papparich.png",
+    tags: ["Flutter", "Video Integration", "Recipe Management"],
+    year: "2020 - 2021",
     role: "Mobile Developer",
-    duration: "3+ years",
-    overview: "Built a full-featured e-commerce application specializing in action figures and anime merchandise. Available on both Play Store and App Store serving Singapore and international markets.",
-    challenge: "Creating a premium e-commerce platform with international payment support, product catalog management, transaction tracking, and Flash Sale features.",
-    solution: "Developed Flutter app with Stripe payment gateway integration, implemented notification system, transaction history tracking, voucher and promo code management, and Flash Sale features.",
+    duration: "1+ years",
+    overview:
+      "Developed an internal application for Papparich restaurant staff displaying menu items, recipes, and instructional videos for food preparation.",
+    challenge:
+      "Creating an internal tool that helps kitchen staff learn and execute recipes with visual guides and video tutorials.",
+    solution:
+      "Built Flutter app with recipe database, integrated video playback for cooking instructions, and menu display system.",
     results: [
-      "Available on both Play Store and App Store",
-      "Strong customer base in Singapore and international markets",
-      "Successful Flash Sale campaigns with high conversion",
-      "Positive user ratings and reviews",
-      "Growing merchandise portfolio"
+      "Improved food preparation consistency",
+      "Easy access to recipes for staff",
+      "Video tutorials reduced cooking errors",
+      "Better staff training tool",
+      "Increased operational efficiency",
     ],
-    technologies: ["Flutter", "Dart", "Stripe", "Payment Gateway", "Push Notifications", "Firebase"],
-    link: "https://play.google.com/store/apps/details?id=com.hakkenonline.www",
+    technologies: ["Flutter", "Dart", "Video Integration", "Recipe Management"],
   },
   {
     id: "tokoaki-ecommerce",
     title: "Tokoaki.co.id — E-Commerce Vehicle Battery",
-    description: "Complete e-commerce platform for vehicle battery sales with order tracking and payment processing.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
+    description:
+      "Complete e-commerce platform for vehicle battery sales with order tracking and payment processing.",
+    image: "tokoaki.jpg",
     tags: ["Flutter", "E-Commerce", "Order Tracking", "Payment Gateway"],
-    year: "2020 - Present",
+    year: "2020 - 2022",
     role: "Mobile Developer",
-    duration: "3+ years",
-    overview: "Developed a mobile e-commerce application for Tokoaki battery sales. Users can browse battery options, add to cart, checkout, and track order status in real-time.",
-    challenge: "Building an e-commerce app that handles vehicle battery selection, inventory management, and real-time order tracking for delivery monitoring.",
-    solution: "Created Flutter app with product catalog, shopping cart system, checkout process, payment integration, and real-time order status tracking.",
+    duration: "2+ years",
+    overview:
+      "Developed a mobile e-commerce application for Tokoaki battery sales. Users can browse battery options, add to cart, checkout, and track order status in real-time.",
+    challenge:
+      "Building an e-commerce app that handles vehicle battery selection, inventory management, and real-time order tracking for delivery monitoring.",
+    solution:
+      "Created Flutter app with product catalog, shopping cart system, checkout process, payment integration, and real-time order status tracking.",
     results: [
       "Successfully processing battery sales online",
       "Real-time order tracking for customers",
       "Improved customer experience with online shopping",
       "Seamless checkout process",
-      "Growing user base"
+      "Growing user base",
     ],
-    technologies: ["Flutter", "Dart", "Firebase", "Payment Gateway", "Order Tracking"],
-  },
-  {
-    id: "forstock-wms",
-    title: "Forstock WMS — Warehouse Management System",
-    description: "Internal warehouse management system for picking, packing, and inventory operations.",
-    image: "https://images.unsplash.com/photo-1553531088-e59d884e8db2?w=800&q=80",
-    tags: ["Flutter", "Warehouse Management", "Inventory", "Operations"],
-    year: "2021 - 2022",
-    role: "Mobile Developer",
-    duration: "1+ years",
-    overview: "Developed an internal warehouse management system enabling warehouse staff to perform picking, packing, and unpacking operations efficiently.",
-    challenge: "Creating a system that streamlines warehouse operations with real-time updates and easy-to-use interface for staff.",
-    solution: "Built Flutter app with picking workflow, packing management, inventory updates, and operation reporting features.",
-    results: [
-      "Streamlined warehouse operations",
-      "Reduced picking and packing time",
-      "Improved inventory accuracy",
-      "Easy-to-use interface for staff",
-      "Real-time operation tracking"
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Payment Gateway",
+      "Order Tracking",
     ],
-    technologies: ["Flutter", "Dart", "Warehouse Ops", "Inventory Management"],
   },
   {
     id: "pos-tokoaki-mitra",
     title: "POS TokoAki Mitra — Point of Sales",
-    description: "Point of sales application for battery shop owners to manage orders, reports, and technician tracking.",
-    image: "https://images.unsplash.com/photo-1556740733-2aea2e7acebb?w=800&q=80",
+    description:
+      "Point of sales application for battery shop owners to manage orders, reports, and technician tracking.",
+    image: "tokoaki.jpg",
     tags: ["Flutter", "POS", "Order Management", "Reporting"],
-    year: "2021 - Present",
+    year: "2020 - 2022",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Built a POS system for Tokoaki battery shop partners to manage customer orders, view sales reports, and track technician deliveries.",
-    challenge: "Creating a comprehensive POS system that handles order management, reporting, and technician tracking for battery installation services.",
-    solution: "Developed Flutter app with order management, time-based reporting, technician location tracking, and sales history features.",
+    overview:
+      "Built a POS system for Tokoaki battery shop partners to manage customer orders, view sales reports, and track technician deliveries.",
+    challenge:
+      "Creating a comprehensive POS system that handles order management, reporting, and technician tracking for battery installation services.",
+    solution:
+      "Developed Flutter app with order management, time-based reporting, technician location tracking, and sales history features.",
     results: [
       "Enabled shop owners to manage orders efficiently",
       "Real-time technician tracking",
       "Comprehensive sales reports",
       "Improved business operations",
-      "Better customer service"
+      "Better customer service",
     ],
     technologies: ["Flutter", "Dart", "POS System", "Google Maps", "Reporting"],
   },
   {
     id: "toko-aki-teknisi",
     title: "Toko Aki Teknisi — Technician Service App",
-    description: "Mobile application for technicians to receive orders, view customer locations, and manage payments.",
-    image: "https://images.unsplash.com/photo-1556740733-2aea2e7acebb?w=800&q=80",
+    description:
+      "Mobile application for technicians to receive orders, view customer locations, and manage payments.",
+    image: "tokoaki.jpg",
     tags: ["Flutter", "Google Maps", "Service Management", "Order Tracking"],
-    year: "2021 - Present",
+    year: "2020 - 2022",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Developed a mobile app for Tokoaki technicians to manage customer orders, view distances, navigate routes, and process payments on the field.",
-    challenge: "Building a field service app with real-time location tracking, route optimization, and payment processing capabilities.",
-    solution: "Created Flutter app with Google Maps integration for distance display and route navigation, payment processing, login system, and order reporting.",
+    overview:
+      "Developed a mobile app for Tokoaki technicians to manage customer orders, view distances, navigate routes, and process payments on the field.",
+    challenge:
+      "Building a field service app with real-time location tracking, route optimization, and payment processing capabilities.",
+    solution:
+      "Created Flutter app with Google Maps integration for distance display and route navigation, payment processing, login system, and order reporting.",
     results: [
       "Improved technician efficiency with GPS navigation",
       "Real-time order management",
       "On-site payment processing",
       "Monthly order reports",
-      "Better customer coordination"
+      "Better customer coordination",
     ],
-    technologies: ["Flutter", "Dart", "Google Maps", "Payment Gateway", "GPS", "Firebase"],
-  },
-  {
-    id: "papparich-app",
-    title: "Papparich — Recipe & Cooking Guide",
-    description: "Internal application displaying restaurant menus, recipes, and video tutorials for food preparation.",
-    image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&q=80",
-    tags: ["Flutter", "Video Integration", "Recipe Management"],
-    year: "2020 - 2021",
-    role: "Mobile Developer",
-    duration: "1+ years",
-    overview: "Developed an internal application for Papparich restaurant staff displaying menu items, recipes, and instructional videos for food preparation.",
-    challenge: "Creating an internal tool that helps kitchen staff learn and execute recipes with visual guides and video tutorials.",
-    solution: "Built Flutter app with recipe database, integrated video playback for cooking instructions, and menu display system.",
-    results: [
-      "Improved food preparation consistency",
-      "Easy access to recipes for staff",
-      "Video tutorials reduced cooking errors",
-      "Better staff training tool",
-      "Increased operational efficiency"
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Google Maps",
+      "Payment Gateway",
+      "GPS",
+      "Firebase",
     ],
-    technologies: ["Flutter", "Dart", "Video Integration", "Recipe Management"],
   },
+
   {
     id: "lexikon-app",
     title: "Lexikon — Employee Work Management",
-    description: "Internal employee management application with location tracking and work management features.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    description:
+      "Internal employee management application with location tracking and work management features.",
+    image: "lexikon.png",
     tags: ["Flutter", "Location Tracking", "Employee Management", "GPS"],
     year: "2020 - 2021",
     role: "Mobile Developer",
     duration: "1+ years",
-    overview: "Developed an internal employee work management application with real-time location tracking capabilities for field employees.",
-    challenge: "Building a work management system with periodic GPS tracking without draining device battery significantly.",
-    solution: "Implemented Flutter app with optimized location tracking that sends user coordinates to server at regular intervals, enabling accurate employee location monitoring.",
+    overview:
+      "Developed an internal employee work management application with real-time location tracking capabilities for field employees.",
+    challenge:
+      "Building a work management system with periodic GPS tracking without draining device battery significantly.",
+    solution:
+      "Implemented Flutter app with optimized location tracking that sends user coordinates to server at regular intervals, enabling accurate employee location monitoring.",
     results: [
       "Real-time employee location tracking",
       "Improved field work management",
       "Optimized battery usage with periodic tracking",
       "Better work coordination",
-      "Enhanced team visibility"
+      "Enhanced team visibility",
     ],
     technologies: ["Flutter", "Dart", "GPS", "Location Services", "Firebase"],
   },
-  {
-    id: "pos-hakken",
-    title: "POS Hakken — Action Figure Sales System",
-    description: "Point of sales system for action figure retail with inventory, billing, and reporting features.",
-    image: "https://images.unsplash.com/photo-1556740733-2aea2e7acebb?w=800&q=80",
-    tags: ["Kotlin", "Android", "POS", "Inventory"],
-    year: "2019 - 2021",
-    role: "Mobile Developer",
-    duration: "2+ years",
-    overview: "Built a comprehensive POS system for Hakken action figure retail store with inventory management and sales reporting.",
-    challenge: "Creating a reliable POS system that handles product listings, shopping cart, printing receipts, sales reports, and payment processing.",
-    solution: "Developed Kotlin Android app with product database, cart management, receipt printing, sales reporting, and payment integration.",
-    results: [
-      "Streamlined retail operations",
-      "Accurate inventory tracking",
-      "Professional receipt printing",
-      "Comprehensive sales reports",
-      "Improved customer checkout experience"
-    ],
-    technologies: ["Kotlin", "Android", "POS System", "Inventory Management", "Receipt Printing"],
-  },
+
   {
     id: "aphrozone-kiosk",
     title: "Aphrozone Kiosk — Beauty E-Commerce",
-    description: "In-store e-commerce kiosk application for beauty products with stock checking and queue management.",
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+    description:
+      "In-store e-commerce kiosk application for beauty products with stock checking and queue management.",
+    image: "aphrozone-kiosk.png",
     tags: ["Kotlin", "Android", "E-Commerce", "In-store"],
     year: "2019 - 2021",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Developed an in-store e-commerce kiosk application for Aphrozone beauty products. Customers can browse, check stock, and get payment queue numbers.",
-    challenge: "Creating an easy-to-use touch screen interface for customers to browse products, check stock levels, and manage payment queuing.",
-    solution: "Built Kotlin Android app with product browsing, real-time stock checking, checkout system, and queue number generation for payment.",
+    overview:
+      "Developed an in-store e-commerce kiosk application for Aphrozone beauty products. Customers can browse, check stock, and get payment queue numbers.",
+    challenge:
+      "Creating an easy-to-use touch screen interface for customers to browse products, check stock levels, and manage payment queuing.",
+    solution:
+      "Built Kotlin Android app with product browsing, real-time stock checking, checkout system, and queue number generation for payment.",
     results: [
       "Improved in-store customer experience",
       "Real-time stock visibility",
       "Efficient payment queue management",
       "Increased product discovery",
-      "Better customer flow in stores"
+      "Better customer flow in stores",
     ],
-    technologies: ["Kotlin", "Android", "E-Commerce", "Queue Management", "Stock Management"],
+    technologies: [
+      "Kotlin",
+      "Android",
+      "E-Commerce",
+      "Queue Management",
+      "Stock Management",
+    ],
   },
   {
     id: "aphrozone-pos",
     title: "Aphrozone POS — Beauty Product Sales",
-    description: "Point of sales system for beauty product retail with payment processing and inventory management.",
-    image: "https://images.unsplash.com/photo-1556740733-2aea2e7acebb?w=800&q=80",
+    description:
+      "Point of sales system for beauty product retail with payment processing and inventory management.",
+    image: "aphrozone-pos.png",
     tags: ["Kotlin", "Android", "POS", "Beauty Retail"],
     year: "2019 - 2021",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Built a POS system for Aphrozone beauty retail following the kiosk application workflow for complete store operations.",
-    challenge: "Creating a backend POS system that continues the business process from the in-store kiosk application.",
-    solution: "Developed Kotlin Android app handling payment processing, inventory updates, sales reconciliation, and transaction records.",
+    overview:
+      "Built a POS system for Aphrozone beauty retail following the kiosk application workflow for complete store operations.",
+    challenge:
+      "Creating a backend POS system that continues the business process from the in-store kiosk application.",
+    solution:
+      "Developed Kotlin Android app handling payment processing, inventory updates, sales reconciliation, and transaction records.",
     results: [
       "Seamless workflow from kiosk to POS",
       "Complete sales transactions",
       "Inventory synchronization",
       "Payment processing",
-      "Business operation continuity"
+      "Business operation continuity",
     ],
-    technologies: ["Kotlin", "Android", "POS System", "Payment Gateway", "Inventory"],
+    technologies: [
+      "Kotlin",
+      "Android",
+      "POS System",
+      "Payment Gateway",
+      "Inventory",
+    ],
   },
   {
     id: "sobat-mjs-pharmacy",
     title: "SOBAT MJS — Online Pharmacy Platform",
-    description: "Complete online shop application for pharmacy with user verification, product listing, and Midtrans payment integration.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
+    description:
+      "Complete online shop application for pharmacy with user verification, product listing, and Midtrans payment integration.",
+    image: "sobat-mjs-pharmacy.png",
     tags: ["Flutter", "Payment Gateway", "Pharmacy", "Notifications"],
     year: "2018 - 2020",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Developed a comprehensive online pharmacy application for Muda Jaya Sukses pharmacy enabling customers to purchase medications online.",
-    challenge: "Building a secure pharmacy e-commerce platform with user verification, product catalog, and reliable payment processing.",
-    solution: "Created Flutter app with user registration/login, identity verification, product listing, notification system, and Midtrans payment gateway integration.",
+    overview:
+      "Developed a comprehensive online pharmacy application for Muda Jaya Sukses pharmacy enabling customers to purchase medications online.",
+    challenge:
+      "Building a secure pharmacy e-commerce platform with user verification, product catalog, and reliable payment processing.",
+    solution:
+      "Created Flutter app with user registration/login, identity verification, product listing, notification system, and Midtrans payment gateway integration.",
     results: [
       "Enabled online medication sales",
       "Secure user verification system",
       "Reliable payment processing",
       "Push notifications for orders",
-      "Growing customer base"
+      "Growing customer base",
     ],
-    technologies: ["Flutter", "Dart", "Midtrans", "Payment Gateway", "Firebase", "User Auth"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Midtrans",
+      "Payment Gateway",
+      "Firebase",
+      "User Auth",
+    ],
   },
   {
     id: "inochi-apparel-pos",
     title: "Inochi Apparel — Children's Clothing POS",
-    description: "Internal POS application for children's clothing store with inventory, customer management, and printing.",
-    image: "https://images.unsplash.com/photo-1556740733-2aea2e7acebb?w=800&q=80",
+    description:
+      "Internal POS application for children's clothing store with inventory, customer management, and printing.",
+    image: "inochi-apparel-pos.png",
     tags: ["Flutter", "POS", "Inventory", "Retail"],
     year: "2018 - 2020",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Built an internal POS system for Inochi Apparel children's clothing store with comprehensive inventory and customer management.",
-    challenge: "Creating a POS system with product price management, customer records, order history, inventory tracking, and receipt printing.",
-    solution: "Developed Flutter app with product listing, customer management, order tracking, inventory system, and integrated printing functionality.",
+    overview:
+      "Built an internal POS system for Inochi Apparel children's clothing store with comprehensive inventory and customer management.",
+    challenge:
+      "Creating a POS system with product price management, customer records, order history, inventory tracking, and receipt printing.",
+    solution:
+      "Developed Flutter app with product listing, customer management, order tracking, inventory system, and integrated printing functionality.",
     results: [
       "Streamlined retail operations",
       "Efficient inventory tracking",
       "Customer data management",
       "Order history tracking",
-      "Professional receipt printing"
+      "Professional receipt printing",
     ],
-    technologies: ["Flutter", "Dart", "POS System", "Inventory Management", "Printing"],
+    technologies: [
+      "Flutter",
+      "Dart",
+      "POS System",
+      "Inventory Management",
+      "Printing",
+    ],
     link: "https://play.google.com/store/apps/details?id=id.createch.inochi_apparel",
   },
   {
     id: "speranza-donation",
     title: "Speranza — Orphanage Donation Platform",
-    description: "Charitable donation application connecting donors with orphanage children in Yogyakarta.",
-    image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+    description:
+      "Charitable donation application connecting donors with orphanage children in Yogyakarta.",
+    image: "speranza-donation.png",
     tags: ["Flutter", "Charitable Giving", "Donation Platform"],
     year: "2018 - 2020",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Developed a donation platform for Speranza Foundation orphanage enabling donors to contribute to specific children's needs.",
-    challenge: "Creating a charitable app that displays children's information, tracks donation targets, and manages donor contributions transparently.",
-    solution: "Built Flutter app with child profiles, donation targets, needs details, and donation tracking system for transparency.",
+    overview:
+      "Developed a donation platform for Speranza Foundation orphanage enabling donors to contribute to specific children's needs.",
+    challenge:
+      "Creating a charitable app that displays children's information, tracks donation targets, and manages donor contributions transparently.",
+    solution:
+      "Built Flutter app with child profiles, donation targets, needs details, and donation tracking system for transparency.",
     results: [
       "Successfully launched on Play Store",
       "Growing donor community",
       "Transparent donation tracking",
       "Improved fundraising for children",
-      "Positive social impact"
+      "Positive social impact",
     ],
     technologies: ["Flutter", "Dart", "Donation Platform", "Firebase"],
     link: "https://play.google.com/store/apps/details?id=id.createch.speranza_app",
@@ -422,21 +513,25 @@ export const projects: Project[] = [
   {
     id: "talikasih-brasil",
     title: "Talikasih Brasil — International Donation App",
-    description: "Donation application connecting Brazilian donors with orphanage children in Solo City, Indonesia.",
-    image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+    description:
+      "Donation application connecting Brazilian donors with orphanage children in Solo City, Indonesia.",
+    image: "talikasih-brasil.png",
     tags: ["Flutter", "International", "Donation Platform"],
     year: "2018 - 2020",
     role: "Mobile Developer",
     duration: "2+ years",
-    overview: "Built an international donation platform specifically for Brazilian donors supporting orphanage children in Solo City.",
-    challenge: "Creating a donation app that works internationally with language support and international payment capabilities.",
-    solution: "Developed Flutter app with internationalization, child profiles, donation targets, and international payment support.",
+    overview:
+      "Built an international donation platform specifically for Brazilian donors supporting orphanage children in Solo City.",
+    challenge:
+      "Creating a donation app that works internationally with language support and international payment capabilities.",
+    solution:
+      "Developed Flutter app with internationalization, child profiles, donation targets, and international payment support.",
     results: [
       "Available on Play Store",
       "International donor base from Brazil",
       "Cross-border charitable giving",
       "Positive impact for children in Solo",
-      "Cultural exchange through giving"
+      "Cultural exchange through giving",
     ],
     technologies: ["Flutter", "Dart", "International Payment", "Localization"],
     link: "https://play.google.com/store/apps/details?id=id.createch.projeto_shelter",
@@ -444,24 +539,27 @@ export const projects: Project[] = [
   {
     id: "food-truck-game",
     title: "Food Truck Game — Casual Mobile Game",
-    description: "Casual mobile game where players drive a food truck and navigate through obstacles to sell food.",
-    image: "https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=800&q=80",
+    description:
+      "Casual mobile game where players drive a food truck and navigate through obstacles to sell food.",
+    image: "food-truck-game.png",
     tags: ["Game Development", "Mobile Game", "Casual Gaming"],
     year: "2018 - 2019",
     role: "Game Developer",
     duration: "1+ years",
-    overview: "Developed a casual mobile game featuring food truck gameplay with obstacle navigation and food selling mechanics.",
-    challenge: "Creating an engaging casual game with intuitive controls, fun mechanics, and smooth performance on mobile devices.",
-    solution: "Built game with food truck driving mechanics, obstacle avoidance, food selling features, and progressive difficulty.",
+    overview:
+      "Developed a casual mobile game featuring food truck gameplay with obstacle navigation and food selling mechanics.",
+    challenge:
+      "Creating an engaging casual game with intuitive controls, fun mechanics, and smooth performance on mobile devices.",
+    solution:
+      "Built game with food truck driving mechanics, obstacle avoidance, food selling features, and progressive difficulty.",
     results: [
       "Available on Play Store",
       "Positive player reviews",
       "Engaging gameplay mechanics",
       "Smooth mobile performance",
-      "Fun casual gaming experience"
+      "Fun casual gaming experience",
     ],
     technologies: ["Game Development", "Mobile Gaming", "Game Physics"],
     link: "https://play.google.com/store/apps/details?id=com.MeryTech.FoodTruck",
   },
 ];
-
