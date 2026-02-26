@@ -7,7 +7,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { motion } from "motion/react";
-import profileImage from "@/assets/profile.png";
+import profileImage from "@/assets/profile-1.png";
 
 const stats = [
   { value: "8+", label: "Years Experience" },
@@ -16,7 +16,23 @@ const stats = [
   { value: "99%", label: "Client Satisfaction" },
 ];
 
-const techs = ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker"];
+const techs = [
+  "React",
+  "TypeScript",
+  "Node.js",
+  "PostgreSQL",
+  "Google Cloud Platform",
+  "Docker",
+  "Flutter",
+  "Firebase",
+  "Next.js",
+  "Strapi",
+  "Laravel",
+  "n8n",
+  "Java",
+  "Kotlin",
+  "Swift",
+];
 
 export function Hero() {
   const handleHireMe = () => {
@@ -172,7 +188,7 @@ export function Hero() {
                     label: "LinkedIn",
                   },
                   {
-                    href: "mailto:hello@thomasdiky.dev",
+                    href: "mailto:merrythomas909@gmail.com",
                     icon: Mail,
                     label: "Email",
                   },

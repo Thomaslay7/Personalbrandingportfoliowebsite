@@ -13,12 +13,20 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+
+    const { name, email, subject, message } = formData;
+    const emailBody = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nSubject: ${subject}\n\nMessage:\n${message}`,
+    );
+
+    // Redirect to email client
+    window.location.href = `mailto:merrythomas909@gmail.com?subject=${encodeURIComponent(subject)}&body=${emailBody}`;
+
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 3000);
+    }, 2000);
   };
 
   const handleChange = (
@@ -31,15 +39,15 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@thomasdiky.dev",
-      href: "mailto:hello@thomasdiky.dev",
+      value: "merrythomas909@gmail.com",
+      href: "mailto:merrythomas909@gmail.com",
       color: "text-indigo-500 bg-indigo-100 dark:bg-indigo-900/30",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+62 812 3456 7890",
-      href: "tel:+6281234567890",
+      value: "+62 896 37717 620",
+      href: "tel:+6289637717620",
       color: "text-violet-500 bg-violet-100 dark:bg-violet-900/30",
     },
     {
@@ -181,7 +189,7 @@ export function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-input-background rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all text-sm"
-                    placeholder="Thomas Diky"
+                    placeholder="Your Name"
                   />
                 </div>
                 <div className="space-y-2">

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter, Heart, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Mail, Heart, ArrowUp } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,10 +29,10 @@ export function Footer() {
               Fullstack Developer · Open for Freelance
             </p>
             <a
-              href="mailto:hello@thomasdiky.dev"
+              href="mailto:merrythomas909@gmail.com"
               className="text-sm text-primary hover:underline"
             >
-              hello@thomasdiky.dev
+              merrythomas909@gmail.com
             </a>
           </div>
 
@@ -50,12 +50,7 @@ export function Footer() {
                   label: "LinkedIn",
                 },
                 {
-                  href: "https://twitter.com",
-                  icon: Twitter,
-                  label: "Twitter",
-                },
-                {
-                  href: "mailto:hello@thomasdiky.dev",
+                  href: "mailto:merrythomas909@gmail.com",
                   icon: Mail,
                   label: "Email",
                 },
