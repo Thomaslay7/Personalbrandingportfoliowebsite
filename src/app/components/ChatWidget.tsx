@@ -223,7 +223,7 @@ export function ChatWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-8 w-96 h-[600px] rounded-3xl shadow-2xl z-40 flex flex-col overflow-hidden border border-border bg-card"
+            className="fixed bottom-24 right-8 w-96 h-[600px] rounded-3xl shadow-2xl z-40 flex flex-col overflow-hidden border border-border bg-white dark:bg-slate-900"
           >
             {/* Header */}
             <div className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-6">
