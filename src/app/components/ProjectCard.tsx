@@ -37,7 +37,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     if (imageName.startsWith('http')) {
       return imageName;
     }
-    // For local assets, reference from /src/assets/ path
+    // For local assets, use relative path
     return `/src/assets/${imageName}`;
   };
 

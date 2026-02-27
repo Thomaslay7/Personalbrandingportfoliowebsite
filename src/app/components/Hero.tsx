@@ -7,7 +7,9 @@ import {
   Sparkles,
 } from "lucide-react";
 import { motion } from "motion/react";
-import profileImage from "@/assets/profile-1.png";
+
+// Use relative path for assets - this works better with Vite
+const profileImage = "/src/assets/profile-1.png";
 
 const stats = [
   { value: "8+", label: "Years Experience" },

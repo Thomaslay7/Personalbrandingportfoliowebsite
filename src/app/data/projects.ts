@@ -223,7 +223,7 @@ export const projects: Project[] = [
     title: "Papparich — Recipe & Cooking Guide",
     description:
       "Internal application displaying restaurant menus, recipes, and video tutorials for food preparation.",
-    image: "papparich.png",
+    image: "papparichid.jpg",
     tags: ["Flutter", "Video Integration", "Recipe Management"],
     year: "2020 - 2021",
     role: "Mobile Developer",

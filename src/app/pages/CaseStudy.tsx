@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from "react-router";
 import { motion } from "motion/react";
+import { useEffect } from "react";
 import {
   ArrowLeft,
   ExternalLink,
@@ -16,9 +17,24 @@ export default function CaseStudy() {
   const { id } = useParams();
   const project = projects.find((p) => p.id === id);
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
   if (!project) {
     return <Navigate to="/404" replace />;
   }
+
+  // Helper function to resolve image path
+  const getImagePath = (imageName: string) => {
+    // If it's already a full URL (http/https), return as is
+    if (imageName.startsWith('http')) {
+      return imageName;
+    }
+    // For local assets, use relative path
+    return `/src/assets/${imageName}`;
+  };
 
   return (
     <div className="pt-16 min-h-screen">
@@ -112,9 +128,12 @@ export default function CaseStudy() {
           {/* Hero image */}
           <div className="aspect-video rounded-3xl overflow-hidden mb-16 border border-border shadow-2xl shadow-primary/10">
             <img
-              src={project.image}
+              src={getImagePath(project.image)}
               alt={project.title}
               className="w-full h-full object-cover"
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=675&fit=crop`;
+              }}
             />
           </div>
 
