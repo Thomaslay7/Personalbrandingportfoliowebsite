@@ -244,6 +244,114 @@ export const projects: Project[] = [
     technologies: ["Flutter", "Dart", "Video Integration", "Recipe Management"],
   },
   {
+    id: "haircut-management",
+    title: "Hair Cut Management System — Salon & Barber Operations",
+    description:
+      "Complete salon management system with online booking, staff scheduling, appointment tracking, and customer management.",
+    image: "hair-cut.png",
+    tags: ["Laravel", "Filament", "Flutter", "MySQL", "Salon Management"],
+    year: "2024",
+    role: "Full Stack Developer",
+    duration: "1 month",
+    overview:
+      "Developed a comprehensive hair salon and barber shop management system. Features online booking platform, powerful Filament admin dashboard for salon staff, iOS & Android mobile apps for customers and stylists, and complete business management tools.",
+    challenge:
+      "Creating an integrated solution that handles appointment scheduling, stylist availability, customer preferences, service pricing, inventory management, and provides seamless experience across web and mobile platforms.",
+    solution:
+      "Built Laravel backend with Filament admin panel for comprehensive salon management, developed Flutter mobile app for both iOS and Android platforms, created responsive web booking platform, integrated MySQL database for reliable data management.",
+    results: [
+      "Complete salon management solution deployed",
+      "Online booking platform with customer portal",
+      "Powerful Filament admin dashboard for staff scheduling",
+      "iOS & Android mobile apps for customers and stylists",
+      "Real-time appointment scheduling and management",
+      "Stylist availability and skill tracking",
+      "Improved customer retention and satisfaction",
+    ],
+    technologies: [
+      "Laravel",
+      "Filament",
+      "Flutter",
+      "MySQL",
+      "REST API",
+      "Scheduling System",
+      "Real-time Updates",
+    ],
+  },
+
+  {
+    id: "glowup-clinic",
+    title: "GlowUp — All-in-One Beauty Clinic Management System",
+    description:
+      "Complete solution for beauty clinics with booking website, management dashboard, mobile apps, and full business support.",
+    image: "glow-up.png",
+    tags: ["Laravel", "Filament", "Flutter", "MySQL", "Clinic Management"],
+    year: "2022",
+    role: "Full Stack Developer",
+    duration: "1 month",
+    overview:
+      "Developed a comprehensive clinic management system for GlowUp beauty clinics. Includes web-based booking platform, admin dashboard with Filament, iOS & Android mobile apps for clinic staff and customers, and complete business support.",
+    challenge:
+      "Creating an integrated solution that handles clinic bookings, staff management, customer profiles, service scheduling, appointment tracking, and provides seamless experience across web and mobile platforms.",
+    solution:
+      "Built Laravel backend with Filament admin panel for powerful management interface, developed Flutter mobile app for both iOS and Android platforms, created responsive web booking platform, and integrated MySQL database for robust data management.",
+    results: [
+      "Complete clinic management solution deployed",
+      "Web booking platform with customer portal",
+      "Powerful Filament admin dashboard for staff",
+      "iOS & Android mobile apps for clinic operations",
+      "Real-time appointment scheduling and tracking",
+      "Streamlined clinic business operations",
+      "Improved customer booking experience",
+    ],
+    technologies: [
+      "Laravel",
+      "Filament",
+      "Flutter",
+      "MySQL",
+      "REST API",
+      "Responsive Design",
+      "Real-time Updates",
+    ],
+  },
+  {
+    id: "rentcar-management",
+    title: "Rent Car Management System — Vehicle Fleet & Booking Platform",
+    description:
+      "Modern vehicle rental management system with online reservation, fleet tracking, booking automation, and customer portal.",
+    image: "not-found.png",
+    tags: ["Next.js", "Supabase", "PostgreSQL", "Fleet Management"],
+    year: "2024",
+    role: "Full Stack Developer",
+    duration: "1 month",
+    overview:
+      "Developed a state-of-the-art vehicle rental management platform. Includes customer-facing booking website with real-time availability, admin dashboard for fleet management, automated reservation system, and integration with payment gateways. Provides seamless experience for customers and efficient operations for rental companies.",
+    challenge:
+      "Building a scalable rental system that handles real-time vehicle availability, complex booking rules, pricing calculations, customer verification, payment processing, and provides a smooth user experience across different platforms.",
+    solution:
+      "Built with Next.js for fast, responsive frontend, leveraged Supabase for real-time database and authentication, used PostgreSQL for robust data management, implemented automated booking system with pricing engine, and integrated secure payment processing.",
+    results: [
+      "Fully functional vehicle rental platform deployed",
+      "Real-time vehicle availability and inventory tracking",
+      "Online reservation system with instant confirmation",
+      "Automated pricing based on duration and vehicle type",
+      "Integrated payment gateway for secure transactions",
+      "Customer portal for booking management and history",
+      "Admin dashboard for fleet and booking management",
+      "Reduced booking processing time by 90%",
+    ],
+    technologies: [
+      "Next.js",
+      "React",
+      "Supabase",
+      "PostgreSQL",
+      "Real-time Database",
+      "Payment Gateway",
+      "Authentication",
+      "Responsive Design",
+    ],
+  },
+  {
     id: "tokoaki-ecommerce",
     title: "Tokoaki.co.id — E-Commerce Vehicle Battery",
     description:
