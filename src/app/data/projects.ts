@@ -337,7 +337,7 @@ export const projects: Project[] = [
     title: "Lexikon — Employee Work Management",
     description:
       "Internal employee management application with location tracking and work management features.",
-    image: "lexikon.png",
+    image: "not-found.png",
     tags: ["Flutter", "Location Tracking", "Employee Management", "GPS"],
     year: "2020 - 2021",
     role: "Mobile Developer",
@@ -363,7 +363,7 @@ export const projects: Project[] = [
     title: "Aphrozone Kiosk — Beauty E-Commerce",
     description:
       "In-store e-commerce kiosk application for beauty products with stock checking and queue management.",
-    image: "aphrozone-kiosk.png",
+    image: "not-found.png",
     tags: ["Kotlin", "Android", "E-Commerce", "In-store"],
     year: "2019 - 2021",
     role: "Mobile Developer",
@@ -394,7 +394,7 @@ export const projects: Project[] = [
     title: "Aphrozone POS — Beauty Product Sales",
     description:
       "Point of sales system for beauty product retail with payment processing and inventory management.",
-    image: "aphrozone-pos.png",
+    image: "not-found.png",
     tags: ["Kotlin", "Android", "POS", "Beauty Retail"],
     year: "2019 - 2021",
     role: "Mobile Developer",
@@ -425,7 +425,7 @@ export const projects: Project[] = [
     title: "SOBAT MJS — Online Pharmacy Platform",
     description:
       "Complete online shop application for pharmacy with user verification, product listing, and Midtrans payment integration.",
-    image: "sobat-mjs-pharmacy.png",
+    image: "not-found.png",
     tags: ["Flutter", "Payment Gateway", "Pharmacy", "Notifications"],
     year: "2018 - 2020",
     role: "Mobile Developer",
@@ -457,7 +457,7 @@ export const projects: Project[] = [
     title: "Inochi Apparel — Children's Clothing POS",
     description:
       "Internal POS application for children's clothing store with inventory, customer management, and printing.",
-    image: "inochi-apparel-pos.png",
+    image: "not-found.png",
     tags: ["Flutter", "POS", "Inventory", "Retail"],
     year: "2018 - 2020",
     role: "Mobile Developer",
@@ -489,7 +489,7 @@ export const projects: Project[] = [
     title: "Speranza — Orphanage Donation Platform",
     description:
       "Charitable donation application connecting donors with orphanage children in Yogyakarta.",
-    image: "speranza-donation.png",
+    image: "not-found.png",
     tags: ["Flutter", "Charitable Giving", "Donation Platform"],
     year: "2018 - 2020",
     role: "Mobile Developer",
@@ -515,7 +515,7 @@ export const projects: Project[] = [
     title: "Talikasih Brasil — International Donation App",
     description:
       "Donation application connecting Brazilian donors with orphanage children in Solo City, Indonesia.",
-    image: "talikasih-brasil.png",
+    image: "not-found.png",
     tags: ["Flutter", "International", "Donation Platform"],
     year: "2018 - 2020",
     role: "Mobile Developer",
@@ -541,7 +541,7 @@ export const projects: Project[] = [
     title: "Food Truck Game — Casual Mobile Game",
     description:
       "Casual mobile game where players drive a food truck and navigate through obstacles to sell food.",
-    image: "food-truck-game.png",
+    image: "not-found.png",
     tags: ["Game Development", "Mobile Game", "Casual Gaming"],
     year: "2018 - 2019",
     role: "Game Developer",

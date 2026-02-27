@@ -1,6 +1,7 @@
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 import { Link } from "react-router";
+import { useState } from "react";
 import { Project } from "../data/projects";
 
 interface ProjectCardProps {
@@ -32,13 +33,15 @@ function getTagClass(tag: string) {
 }
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const getImagePath = (imageName: string) => {
     // If it's already a full URL (http/https), return as is
     if (imageName.startsWith('http')) {
       return imageName;
     }
-    // For local assets, use relative path
-    return `/src/assets/${imageName}`;
+    // For local assets in public folder
+    return `/assets/${imageName}`;
   };
 
   return (
@@ -54,11 +57,24 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       >
         {/* Image */}
         <div className="relative aspect-[16/9] overflow-hidden bg-muted">
+          {!imageLoaded && (
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-muted via-muted-foreground/10 to-muted animate-pulse"
+              initial={{ opacity: 1 }}
+              animate={{ opacity: [0.5, 1, 0.5] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+            />
+          )}
           <img
             src={getImagePath(project.image)}
             alt={project.title}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 will-change-transform ${
+              imageLoaded ? "opacity-100" : "opacity-0"
+            }`}
+            loading="lazy"
+            onLoad={() => setImageLoaded(true)}
             onError={(e) => {
+              setImageLoaded(true);
               (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=450&fit=crop`;
             }}
           />

@@ -76,9 +76,6 @@ export function Contact() {
           className="mb-16 text-center"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="p-2 rounded-xl bg-primary/10 border border-primary/20">
-              <Sparkles className="w-5 h-5 text-primary" />
-            </div>
             <span className="text-sm font-semibold text-primary uppercase tracking-widest">
               Get in Touch
             </span>

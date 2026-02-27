@@ -1,6 +1,17 @@
 @custom-variant dark (&:is(.dark *));
 
+/* Brand Color Palette - Reusable */
 :root {
+  /* Primary Brand Colors */
+  --color-brand-indigo: #4f46e5;
+  --color-brand-blue: #3b82f6;
+  --color-brand-cyan: #0ea5e9;
+  
+  /* Gradients - Reusable */
+  --gradient-brand: linear-gradient(135deg, #4f46e5 0%, #3b82f6 50%, #0ea5e9 100%);
+  --gradient-brand-to-blue: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  
+  /* Font sizes and weights */
   --font-size: 16px;
   --background: #f8f7ff;
   --foreground: #0f0e1a;
@@ -43,6 +54,15 @@
 }
 
 .dark {
+  /* Dark Mode Brand Colors */
+  --color-brand-indigo: #818cf8;
+  --color-brand-blue: #60a5fa;
+  --color-brand-cyan: #22d3ee;
+  
+  /* Dark Gradients */
+  --gradient-brand: linear-gradient(135deg, #818cf8 0%, #60a5fa 50%, #22d3ee 100%);
+  --gradient-brand-to-blue: linear-gradient(135deg, #818cf8 0%, #60a5fa 100%);
+  
   --background: #0d0b1a;
   --foreground: #f0eeff;
   --card: #13112a;

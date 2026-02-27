@@ -7,9 +7,9 @@ import {
   Sparkles,
 } from "lucide-react";
 import { motion } from "motion/react";
+import { COLORS } from "../constants/colors";
 
-// Use relative path for assets - this works better with Vite
-const profileImage = "/src/assets/profile-1.png";
+const profileImage = "/assets/profile-1.png";
 
 const stats = [
   { value: "8+", label: "Years Experience" },
@@ -117,8 +117,7 @@ export function Hero() {
                 <span
                   className="bg-clip-text text-transparent"
                   style={{
-                    backgroundImage:
-                      "linear-gradient(135deg, #4f46e5 0%, #3b82f6 50%, #0ea5e9 100%)",
+                    backgroundImage: COLORS.gradients.brand,
                   }}
                 >
                   Thomas Diky
@@ -171,7 +170,6 @@ export function Hero() {
                 className="group px-8 py-4 rounded-xl border-2 border-primary/20 hover:border-primary/50 bg-primary/5 hover:bg-primary/10 transition-all duration-300 text-foreground font-semibold flex items-center gap-2"
               >
                 View Work
-                <Sparkles className="w-4 h-4 text-primary" />
               </a>
             </motion.div>
 
@@ -297,8 +295,7 @@ export function Hero() {
               <div
                 className="text-3xl font-extrabold bg-clip-text text-transparent mb-1"
                 style={{
-                  backgroundImage:
-                    "linear-gradient(135deg, #4f46e5 0%, #0ea5e9 100%)",
+                  backgroundImage: COLORS.gradients.brandToBlue,
                 }}
               >
                 {stat.value}

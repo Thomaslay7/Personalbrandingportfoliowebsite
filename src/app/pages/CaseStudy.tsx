@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { projects } from "../data/projects";
 import { Footer } from "../components/Footer";
+import { COLORS } from "../constants/colors";
 
 export default function CaseStudy() {
   const { id } = useParams();
@@ -32,8 +33,8 @@ export default function CaseStudy() {
     if (imageName.startsWith('http')) {
       return imageName;
     }
-    // For local assets, use relative path
-    return `/src/assets/${imageName}`;
+    // For local assets in public folder
+    return `/assets/${imageName}`;
   };
 
   return (
@@ -70,8 +71,7 @@ export default function CaseStudy() {
             <h1
               className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent"
               style={{
-                backgroundImage:
-                  "linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%)",
+                backgroundImage: COLORS.gradients.brand,
               }}
             >
               {project.title}
@@ -197,7 +197,7 @@ export default function CaseStudy() {
               transition={{ duration: 0.5 }}
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="h-6 w-1 rounded-full bg-gradient-to-b from-indigo-500 to-purple-500" />
+                <div className="h-6 w-1 rounded-full bg-gradient-to-b from-indigo-500 to-blue-500" />
                 <h2 className="text-2xl font-bold">Technologies Used</h2>
               </div>
               <div className="flex flex-wrap gap-3 pl-4">
@@ -235,7 +235,7 @@ export default function CaseStudy() {
               href="/#contact"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white shadow-lg hover:shadow-xl transition-all relative"
               style={{
-                background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)",
+                background: COLORS.gradients.brandToBlue,
               }}
             >
               Let's Talk About Your Project
